@@ -1,0 +1,17 @@
+[2026-09-28T07:39:04Z] === ENRICH ITERATION 1 START | repo=asimov-modules/asimov-git-module sha=9495654b ===
+[2026-09-28T07:39:04Z] [iter=1] PHASE START: enrich repo=asimov-modules/asimov-git-module sha=9495654b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/9495654b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/9495654b7dfe8de3bcb27991ef0a20678b6958a0.nq.gz
+[2026-09-28T07:39:11Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-28T07:39:16Z] [iter=1] AST store loaded triples=14050 load_secs=5 mem_mb=107 MB
+[2026-09-28T07:39:16Z] [iter=1] Step 2: Finding LSP targets mem_mb=107 MB
+[2026-09-28T07:39:16Z] [iter=1] LSP targets found call_sites=148 imports=6 extends=0 implements=0 secs=0
+[2026-09-28T07:39:16Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=107 MB
+[2026-09-28T07:39:16Z] [iter=1] Position index built positions=990 nodes_with_types=1185 secs=0 mem_mb=107 MB
+[2026-09-28T07:39:16Z] [iter=1] Step 3: Starting LSP resolution mem_mb=107 MB already_completed_types=[] already_completed_files=0
+[2026-09-28T07:39:16Z] [iter=1] Resolving target type target_type=call_site count=148
+[2026-09-28T07:39:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=0 resolved=0 errors=0 current=src/fetcher/main.rs
+[2026-09-28T07:39:49Z] [iter=1] Target type resolved target_type=call_site resolved=94 errors=9 secs=34 mem_mb=107 MB
+[2026-09-28T07:39:49Z] [iter=1] Resolving target type target_type=import_statement count=6
+[2026-09-28T07:39:58Z] [iter=1] Target type resolved target_type=import_statement resolved=6 errors=0 secs=9 mem_mb=107 MB
+[2026-09-28T07:40:06Z] [iter=1] Step 5: Writing final enrichment file triples=1288
+[2026-09-28T07:40:06Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/9495654b7dfe8de3bcb27991ef0a20678b6958a0.nq.gz size_kb=17
+[2026-09-28T07:40:06Z] [iter=1] PHASE END: enrich elapsed_s=62 elapsed_min=1.0 total_triples=1288
